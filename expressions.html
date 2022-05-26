@@ -1,0 +1,178 @@
+<html><head>
+  <meta charset="utf-8">
+  <meta name="description" content="Software Engineering.">
+  <meta name="author" content="Elucian Moise">
+  <meta name="keywords" content="software, engineering">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Website title -->
+  <title>SC Engineering</title>  
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <!-- Icon -->
+  <link rel="icon" type="image/png"  href="../images/favicon.ico">  
+  <!-- Prism Highlighter -->
+  <link rel="stylesheet" href="../prism.css">
+  <script src="../prism.js"></script>
+  <!-- custom css -->
+  <link rel="stylesheet" href="../sage.css">
+  </head>
+<body>
+
+<div class="container">
+        
+<!-- header -->
+<div class="row">
+    <div class="col">
+        <a href="https://sagecode.net"><img src="../images/sage-logo.svg" alt="Sage-Code Laboratory" height="80"/></a>
+    </div>  
+    <div class="col  bottom-right">
+        <a href="../engineering.html">index</a>&lt;--
+    </div>
+</div><hr>
+
+
+
+<h2>SC Engineering</h2>
+
+
+
+<div class="alert alert-secondary shadow-sm">
+Work in progress!
+</div>
+
+<div>
+<h1>Symbols &amp; Expressions</h1>
+
+
+<h2><a href="https://github.com/sage-code/cse/wiki/Symbols-&amp;-Expressions#data-symbols"></a>Data Symbols</h2>
+
+<p>In general a program manipulate data elements. We learn in school to count using Arabic digital numbers: 0,1,2,3,4,5,6,7,8,9. We also learn how to read and write text using Latin alphabet: Aa, Bb, Cc and so on. This is not the case in all cultures around the globe. Some cultures are using other symbols to represent numbers and text.</p>
+<p>The mos popular encoding system for symbols is now known as Unicode. In the past we used different encoding for each country: ASCII, Extended ASCII. Now we use mostly: UTF16, UTF32 and UTF8.</p>
+<p>Computer is using binary representations of "1" and "0" for encoding symbols. The "1" is usually a positive electrical charge while "0" represents no charge. It is similar to a light bulb. When light is on we can consider it logic = "1". When lights is off we consider logic="0&Prime;.</p>
+<p>Electronic devices can store data using specialized devices, components and methods: electrostatic, magnetic, optic etc. We cover some of these devices in CSH: Hardware class. The point is, computation is now digital. It is based on binary system.</p>
+
+<h2><a href="https://github.com/sage-code/cse/wiki/Symbols-&amp;-Expressions#numeric-systems"></a>Numeric Systems</h2>
+
+<p>A single storage unit is called bit. It can store exclusive: 0 or 1. Using multiple storage units grouped together we can store combinations of 0 and 1. For example on two bit we can represent 4 combinations: {00, 01, 10, 11}. This is called "binary" system. It has two digits: {0,1}.</p>
+<p>If we pair up 3 bits we can represent more digits: {0,1,2,3,4,5,6,7} this kind of representation is called "octal" system, and is very rarely used.</p>
+<p>We can use 4 bits and increase the number of combinations to 16 digits: {0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ,A ,B ,C ,D ,E ,F}. The first {0000 = 0} the last {1111 = F}. This representation is called "hexadecimal".</p>
+<p>As you can see there is not an exact match between the number of possible combinations and 10 digits. Therefore we have invented new digits: {A, B, C, D, E, F} sometimes these digits are represented using lowercase characters: { a, b, c, d, e, f }.</p>
+<p>Computer science is using groups of 8 bits to represent numbers between (0..255) &equiv; (00..ff). This is called "1 byte"= 8 bit. Two bytes used to represent a "1 word" = 16 bit. However this terminology was changed, now "1 word" = 32 bit. On 32 bit we can represent 4294967296 combinations.</p>
+<p>Internal representation of numbers and symbols is different depending on the computer type, operating system and device. For now is suffice to know that "PC" encoding for example is different than "MAC" encoding.</p>
+
+<h2><a href="https://github.com/sage-code/cse/wiki/Symbols-&amp;-Expressions#set-of-things"></a>Set of things</h2>
+
+<p>To understand the predicate logic we need to first understand a set of things. A set is a group of things that are unique represented and not duplicated. All things in a set can be similar or can have characteristics in common.</p>
+<p>Things can belong to classes or category of things that have something in common. For example toys, animals, dogs, propel, furniture, homes. All this can be grouped into sets of things.</p>
+<p>Predicate logic study the things and the relations between these things. For example a thing can belong to a set or do not belong to a set. Two sets can contain the same things or different things.</p>
+<p>Sometimes we need to make a collection of things and sometimes the thing can be duplicated. In this case we have a list of things not a set because some of the things are not unique.</p>
+<p>In mathematics there are 2 significant numeric collection types: Vector and Matrix. In Python we define a "List" that can have one or more dimensions.</p>
+
+<h2><a href="https://github.com/sage-code/cse/wiki/Symbols-&amp;-Expressions#identifiers"></a>Identifiers</h2>
+
+<p>When you create a program, you give names to things. These names are symbolic representations for data elements, structures or for expressions. You need a name so you can refer to data elements more easily, without repeating the data symbols themselves.</p>
+<h4>Example:</h4>
+<p>In this example we define a vector "v" using a Python single dimension list and then check if an element is member of this list. "v" and "x" are both identifiers.</p>
+<pre><code>v = [1,4,6,12,32]
+x = input("check this number")
+if x in v:
+ print("found")
+else:
+ print("not found")
+</code></pre>
+
+<h2><a href="https://github.com/sage-code/cse/wiki/Symbols-&amp;-Expressions#identifier-sigil"></a>Identifier "sigil"</h2>
+
+<p>Sometimes a language uses some kind of prefix for variable names. This is called "sigil" and has the purpose to differentiate identifiers by purpose. For example in Ruby, the global variables use sigil "$". That means all variables that start with "$" will be global variables while sigil "@" represent an object attribute.</p>
+<p>In PHP all variables start with "$", global or not global. Some developers find this rule annoying. In my languages Bee and EVE I use sigil "$" for global system constants and "@" for global system variables.</p>
+
+<h2><a href="https://github.com/sage-code/cse/wiki/Symbols-&amp;-Expressions#type-systems"></a>Type systems</h2>
+
+<p>Programming languages must deal with data. To do this, data is classified by category. For each category there are rules of representation and manipulation. This classification and the rules are called in computer science: "data system".</p>
+<p>Data can be embedded into the program itself or it can be external. When embedded in the program, data is immutable. That means it is constant. You can change this kind of data only if you change the program.</p>
+<p>External data is usually mutable. If is stored on a device that has R/W (Read &amp; Write) capability like HDD (Hard Disk), or RW-CD (Read Write &ndash; Compact Disk). Sometimes a device can store external data in read only mode. For example optical disk or ROM (Read Only Memory) can store data that becomes immutable.</p>
+<p>A variable represents data stored in RAM (Random Access Memory). We can alter value of this kind of data very easy, many times without wearing off the storage. In low level computation data is stored as bit: "0" or "1", but a high level language you can store and manipulate abstract data types, for example: "numeric", "string", "boolean", "date", "time".</p>
+<p>Most computer languages do not have notion of measurement units. So a number can represent any kind of physical or abstract concept. For example: width, height, weight. Only "date" and "time" have measurement units. Computer scientists believe that a computer language becomes too complex if is dealing with measurement units.</p>
+
+<h2><a href="https://github.com/sage-code/cse/wiki/Symbols-&amp;-Expressions#data-literals"></a>Data Literals</h2>
+
+<p>Data literals are symbols or group of symbols that represent constant data. For example: 100 represent the number 100 written in decimal. There are numerous other notations for numbers, representing different data types.</p>
+<p>A group of multiple data elements like a list or a data set can have a special literal created with alphanumeric symbols, delimiters and separators. Once you have learned these conventions, most languages will be easier to grasp since all are using same conventions.</p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>'a'</td>
+<td>Single quoted string</td>
+</tr>
+<tr>
+<td>"string"</td>
+<td>Double quoted string</td>
+</tr>
+<tr>
+<td>0b10110</td>
+<td>Binary number</td>
+</tr>
+<tr>
+<td>1234</td>
+<td>Integer number</td>
+</tr>
+<tr>
+<td>OxFFFF</td>
+<td>Hexadecimal number</td>
+</tr>
+<tr>
+<td>U+FFFF</td>
+<td>Unicode code-point</td>
+</tr>
+<tr>
+<td>0.05</td>
+<td>Decimal number</td>
+</tr>
+<tr>
+<td>1E10</td>
+<td>Scientific notation float numbers</td>
+</tr>
+</tbody>
+</table>
+
+<h2><a href="https://github.com/sage-code/cse/wiki/Symbols-&amp;-Expressions#expressions"></a>Expressions</h2>
+
+<p>You should be familiar with this concept from mathematics. In computer science there are 3 kind of expressions: Infix, Postfix and Prefix. It is easiest to demonstrate the differences by looking at examples of operators that take two operands:</p>
+<pre><code> + x y : Prefix
+ x + y : Infix
+ x y + : Postfix
+</code></pre>
+<p>In these expressions x, y are operands while "+" is an operator. The most simple expressions are using one single operator and one operand. For example "-4" is an expression while "4" is not an expression but a single constant literal. "2 + 4" however is an expression even if there is no variable involved.</p>
+<p>Expressions can be combined in larger expressions using operators. Order of execution can be controlled using operator precedence and also round parenthesis (x+y). We will investigate this in our next examples:</p>
+<h1><a href="https://github.com/sage-code/cse/wiki/Symbols-&amp;-Expressions#infix-expressions"></a>Infix Expressions:</h1>
+<pre><code> x+y+z
+ a + b / 2 + c * 2
+ (a + b) / (a * b)
+ x &ne; y
+ a &le; 5
+</code></pre>
+<p>Most computer languages are using infix expressions. You will learn details about literals and expressions in next course: CSP: Programming. Usually we describe literals and expressions as basic language concepts in first or second tutorial article about every computer language.</p>
+
+
+
+<!-- work in progress-->
+
+<hr>
+<p><b>Read next:</b>
+<a href="template.html">Page Name</a></p>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-copyright text-center"></div>
+</footer>
+</div>
+</body>
+</html>

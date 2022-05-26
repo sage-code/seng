@@ -1,0 +1,11 @@
+<!-- secret message XML example -->
+<note>
+  <to>John</to>
+  <from>Marica</from>
+  <heading category="secret">
+    Secret Message
+  </heading>
+  <body>
+    Please let's meet in the balcony.
+  </body>
+</note>

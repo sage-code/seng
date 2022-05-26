@@ -1,0 +1,300 @@
+<html><head>
+  <meta charset="utf-8">
+  <meta name="description" content="Free tutorial article about programming methods.">
+  <meta name="author" content="Elucian Moise">
+  <meta name="keywords" content="language, programming, paradigm, tutorial">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Website title -->
+  <title>SC Paradigms</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <!-- Icon -->
+  <link rel="icon" type="image/png"  href="../images/favicon.ico">
+  <!-- Prism Highlighter -->
+  <link rel="stylesheet" href="../prism.css">
+  <script src="../prism.js"></script>
+  <!-- custom css -->
+  <link rel="stylesheet" href="../sage.css">
+  </head>
+<body>
+
+<div class="container">
+
+<!-- header -->
+<div class="row">
+    <div class="col">
+        <a href="https://sagecode.net"><img src="../images/sage-logo.svg" alt="Sage-Code Laboratory" height="80"/></a>
+    </div>
+    <div class="col  bottom-right">
+        <a href="../engineering.html">index</a>&lt;--
+    </div>
+</div><hr>
+
+<h1>Programming Paradigms</h1>
+
+<div class="alert alert-secondary shadow-sm">
+A programming paradigm in Computer Science is a programming style. It consist of concepts and ideas that can lead to a better approach to create applications of quality. One of this paradigms is OOP = Object Oriente Programming that is adopted by Java à la carte.
+</div>
+
+<h4>Bookmarks</h4>
+
+<ul>
+<li><a href="#linear"/>Linear Programming</a></li>
+<li><a href="#structured"/>Structured Programming</a></li>
+<li><a href="#objectual"/>Object Oriented Programming</a></li>
+<li><a href="#functional"/>Functional Programming</a></li>
+</ul>
+
+<h2><a id="linear"/>Linear programming</h2>
+<p>In linear programming we can have a sequence of steps that can be executed or interpreted one by one until the program is finished. The program has a single start point and execute all steps in the program. There is no exception, no jump and no skip. The program always has the same effect when is executed.</p>
+
+<p>Linear programming is used in Computer Science for data oriented languages, document oriented languages and programming of old CNC machines in manufacturing industry. In the past, knitting machines used to have a pattern, that was actually a linear program that could repeat in a loop.</p>
+
+<h3>XML Syntax</h3>
+
+<p>XML stands for: Extensible Markup Language. It is a data oriented language.
+It is not a Turing complete language so you can not make programs to resolve computation problems.
+Though an XML based scripting language exist, is called Apache ANT.</p>
+
+<div align="center">
+  <img src="img/html-tag.jpg" srcset="img/xml-tag.svg" width="640" class="image img-fluid protect rounded shadow border"  alt="Responsive Image"/>
+  <p>XML Element Anatomy</p>
+</div>
+
+<h4>Example:</h4>
+
+<p>In the next example you can investigate a message file, stored as XML.</p>
+
+<pre><code  class="language-xml">&lt;!-- secret message XML example --&gt;
+&lt;note&gt;
+   &lt;to&gt;John&lt;/to&gt;
+   &lt;from&gt;Marica&lt;/from&gt;
+   &lt;heading category="secret"&gt;Secret Message&lt;/heading&gt;
+   &lt;body&gt;Please let's meet in the balcony.&lt;/body&gt;
+&lt;/note&gt;</code></pre>
+
+
+<p><b>XML Structure</b></p>
+<p>The core idea behind XML is the markup.
+This are two symbols that enclose a word or so called tag that looks like this: "&lt;tag&gt;".
+XML language do not have it's own keywords pre-defined like in other languages have.
+Instead, every organization or developer, can define specific keywords for a particular domain.
+Therefore this language is called extensible, because is continuously developed and enhanced by third parties.</p>
+
+<p><b>XML Elements</b></p>
+<p>In the example above you can see the XML is hierarchic. First line is a comment. You can ignore the comments. The is a tag used to start one element. The element has an end tag . This is the end of the element. Between the start and end of an element you can store the "content" of the element, explained below:</p>
+
+<p><b>Element Content</b></p>
+
+<p>The content of an element can be plain text or other elements.
+The elements can be side by site (siblings) or nested one inside the other on any number of levels.
+For example &lt;to&gt; is a child elements of &lt;note&gt; that is the root element.
+The root element contains all other elements.</p>
+
+<p><b>Element Attributes</b></p>
+
+<p>The attributes of an element are enumerated after the element name before the end markup "&gt;" separated by space.
+For example: category="secret" is an attribute named category with value secret.
+The values are always enclosed in double quotes.
+One element can have no attribute one or several attributes. Sometimes the attribute has no value.
+This is a Boolean attribute. If is present it has value True if is not present has default value: False.</p>
+
+<h2><a id="structured"/>Structured programming</h2>
+
+<p>In structured programming we create a complex, application based on nested blocks of of code called block statements. Using these structures we can avoid spaghetti code, specific to linear programming. The following structures are most popular in any imperative programming language:</p>
+
+<ol>
+<li><b>Decision:&nbsp;</b>Create one block that is executed or not depending on one condition.</li>
+<li><b>Repetition:&nbsp;</b>Create a block of code that is repeated several times</li>
+<li><b>Selection:&nbsp;</b>Create a block selector based on a value with many cases</li>
+</ol>
+
+<h4>Decision:</h4>
+
+<p>It is usually created with "if-then-else" keywords in most languages, but also can be created with "when" keyword in Bee and EVE languages. Consist in one condition and two blocks of code. The condition can be a logical expression, but in some languages can also be an expression that is (= 0 or >0) or maybe (null and not null). You can analyze the diagram to understand how is working:</p>
+
+<div align="center">
+  <img src="../images/decision.jpg" alt="decision" srcset="../images/decision.svg" width="520" class="img-fluid protect rounded shadow border" >
+  <p>Decision Diagram</p>
+</div>
+
+<h4>Repetition:</h4>
+
+<p>In structured programming there are many versions of repetitive statement. The idea is simple. We start a block of code with a condition. Then we repeat the block of code until the condition become false. The condition can be a simple logical expression.</p>
+
+<div align="center">
+  <img src="../images/while.jpg" alt="repetition" srcset="../images/while.svg"
+  width="520" class="img-fluid protect rounded shadow border" >
+  <p>Repetition Diagram</p>
+</div>
+
+<h4>Selection:</h4>
+
+<p>The selection statement has many blocks, represented in next picture by numbers: {1,2,3,4,...0}. This statement is sometimes called "switch" other times "case" or "match" or even "check". No matter how is called it does almost the same thing. It uses one value to "select" a path of execution.</p>
+
+<div align="center">
+  <img src="../images/switch.jpg" alt="switch" srcset="../images/switch.svg"
+  width="420" class="img-fluid protect rounded shadow border" >
+  <p>Switch Diagram</p>
+</div>
+
+<div class="alert alert-warning">There are programming languages that do not implement this statement. For example "Python" do not have a selection statement. However its functionality can be simulated using "if" and "while" loop.</div>
+
+<h4>Usability:</h4>
+
+<p>Using structured programming we can create Turing complete languages. These languages can do several operations that are represented in structured programming by statements with the following properties:</p>
+
+<ol>
+<li>Start with an initial state;</li>
+<li>Can ask for input;</li>
+<li>Can change it&rsquo;s internal state;</li>
+<li>Can make decisions;</li>
+<li>Can execute one sequence of code or another;</li>
+<li>Can repeat a sequence of code one or many times;</li>
+<li>Can have one or more final states;</li>
+</ol>
+
+<div class="alert alert-info">Following programming languages has made this paradigm famous: {Fortran, Algol, Pascal, Modula, Ada}. Structured programming elements are used today in modern, multi-paradigm languages: {C, C++, Rust, Go, Scala ...}.</div>
+
+<h2><a id="objectual"/>Object Oriented</h2>
+
+<p>This programming style introduce the idea that data and operations that can apply to data are tight connected. In pure Object Oriented programming we have only one things to define: Classes. Each class can hold several fields (attributes) and methods. The methods can change value of attributes.</p>
+
+<div align="center">
+  <img src="../images/class.svg" alt="class"
+       width="400" class="img-fluid protect rounded shadow border" >
+  <p>Class Anatomy</p>
+</div>
+
+<h3>Usability</h3>
+
+<p>You can use a class like a collection of methods. Also we can create multiple "instances" of the class. Each instance is called object. An object has same attributes ast the class and same methods. For object we can set &amp; modify the attribute values.</p>
+
+<p>To understand better we can compare the class with a cookie cutter. Each cookie we cut is an object created with the same template (the cutter). So all the cookies are almost the same, except if we sprinkle them with different color candies. Then the cookies become a little bit different from each other.</p>
+
+<h3>Principles</h3>
+
+<p>Object oriented programming has four principles, called the pillars of OOP programming. These principles are implemented by Java, Scala, Ruby a la carte. Also Python and PHP are object oriented languages.</p>
+
+<table class="table table-bordered table-sm">
+<tr><th>Abstraction</th><td>you can define abstract classes and interfaces<td></tr>
+<tr><th>Encapsulation</th><td>you can define public and private properties and members<td></tr>
+<tr><th>Inheritance</th><td>one class can inherit properties and methods from parent class<td></tr>
+<tr><th>Polymorphism</th><td>one method from a parent class can be overwritten in a child class.<td></tr>
+</table>
+
+<h4>Abstraction</h4>
+
+<p>For implementing this principle, most languages enable creation of <em>classes</em>. This is a block of code that has a name and define a scope. In its scope you can define data (fields) and functions (methods). Together these are called <em>"members"</em> of the class.</p>
+
+<p>Members of a class are more or less protected. You can define public members, that are visible from outside the class and private members that are visible only inside the class scope (local members).</p>
+
+<p>A class, can contain logic (subroutines) that are called usually "methods". These subroutines again can be more or less visible from outside of class scope. Methods can be private or public.</p>
+
+<p>Sometimes we implement methods just partial. We define "abstract" methods. A class that has "abstract" methods is also "abstract". We can not use abstract classes until they are fully implemented bu a sub-class. Check for Inheritance principle to see what a sub-class is.</p>
+
+<h4>Encapsulation</h4>
+
+<p>Encapsulation in Java is a mechanism of wrapping the data (properties and attributes) and code acting on the data (methods) together as a single unit. Declare the variables of a class as private makes encapsulation stronger.</p>
+
+<p>Classes can be "instantiated". That is we clone a class, and this is done with help of a special method called a "constructor". The instances of a class are called "objects" or "instances" of the class. Each object can contain (encapsulate) different data or properties.</p>
+
+<p>A class can implement special "static methods" or "static fields". These are members of the "class scope" that is unique and can be used without making an instance of the class. Static fields do not represent data but more like "class settings" or maybe "class states".</p>
+
+<h4>Inheritance</h4>
+
+<p>In languages that implement OOP a la carte, you can define one class based on other class. This mechanism is called Inheritance. All classes are derived from a primary class that is the root class. So in other words a Class can "extend" another class.</p>
+
+<div class="alert alert-warning">In practice sometimes this model do not work. So we need to define other concepts: "mixin", "traits", "interfaces" and "injection" that are advanced topics covered for different languages in a particular way.</div>
+
+<h4>Polymorphism</h4>
+
+<p>When we use Inheritance, a derived class "inherit" all properties and methods from base class. Sometimes we can "overwrite" a method to change the default behavior of base class. This allow us to extend and modify one class to create a different class that have similar but not exact the same behavior. This is called polymorphism.</p>
+
+<p>To take advantage of polymorphism we can have a reference of an object using parent class type. If we call one method, the object method is responding and not the parent class method. This way the method become polymorph. It changes with the object type.</p>
+
+<h3>Advanced Features</h3>
+
+<p>Diverse OOP languages may offer other features. These features enhance even farther the capability of programmers to create reusable and reuse code made by other developers. However, learning these features require additional effort. Let's define these features:</p>
+
+<h4>Generics</h4>
+
+<p>Generics are classes that are not very specific for a particular data type. For example a dynamic list has the same logic but can apply to different primitive types: List of integers, List of floats and List of Double. In this case we can use a generic library to create a specific List.</p>
+
+<p>This mechanism was created to relax a little bit the strong typing paradigm. It reduces the required lines of code we need to write for a specific design pattern. For dynamic programming languages this is not necessary since a particular object or data member can have any data type.</p>
+
+<h4>Interfaces</h4>
+
+<p>Interfaces are "abstract" concepts that force a specific behavior. Interfaces are almost the same as "abstraction" except that one class can implement multiple interfaces but can extend only one abstract class. So that's the main difference.</p>
+<p>An interface use to have all methods abstract in older Java versions. Now you can create methods that have a default implementation using an interface. However most developers are using abstract method declarations for interfaces.</p>
+
+
+<h4>Mix-ins and Traits</h4>
+<p>Some computer languages that are Object Oriented enable you to inherit new features from multiple base classes. This is called <em>multiple inheritance</em>. Most common though, OOP languages like Java, Scala and Ruby do not support multiple inheritance. Another way was found to enable developers reuse code from multiple ancestors.</p>
+
+<p>A mix-in is a class that re-use multiple "components" to simulate multiple inheritance. The components are called "traits", and represent namespaces. You can include multiple traits in a class to inherit all methods and variables defined in a trait. In Ruby there are no traits but modules.</p>
+
+<p><b>Conclusion:</b>&nbsp;There are advantages and disadvantages of each programming paradigm. Therefore many computer languages implement multiple paradigms. Personally I find this a good thing. Now you are prepared to study about history, present and future of computer languages. Congratulation. Read on!</p>
+
+<div class="alert alert-info">Following programming languages have made this paradigm famous: {SmallTalk, Java}. Functional programming is also used in multi-paradigm languages: {C++, Python, Scala,  Dart...}.</div>
+
+<h2><a id="functional"/>Functional programming</h2>
+
+<div class="alert alert-secondary shadow-sm">
+In programming a function is a named block of code designed to perform a particular task.
+Functions usually have one or more parameters and most function return one result.
+The function is a common way to create reusable code and split a larger problem into smaller parts.
+</div>
+
+<div align="center">
+  <img src="../images/function.jpg" alt="function" srcset="../images/function.svg"
+       width="580" class="img-fluid protect rounded shadow border" >
+  <p>Function Concept</p>
+</div>
+
+
+<p>Functional programming (FP) is a very special programming paradigm. It has a different way of thinking about a functions than the structured programming languages. In FP languages a function is an object. That&rsquo;s the main idea. We do not create classes and objects like in Java. We create only functions.</p>
+
+<h4>Characteristics:</h4>
+
+<ul>
+<li>A function exist as object that can have properties;
+<li>Function name can be stored into a variable as reference;</li>
+<li>We can create a function that return other function as result.</li>
+<li>We can create a function that can receive as argument another function</li>
+<li>Pure functions do not have side-effects and return a single result.</li>
+<li>Execution of a function can be suspended and then resumed;</li>
+</ul>
+
+<p><b>Note:&nbsp;</b>In a functional language a function is called "first class object". That means a function is very similar to an object that is used in Object Oriented Programming. Actually in functional programming we have special design pattern to cover for lack of classes and objects.</p>
+
+<h4>Terminology:</h4>
+
+<table class="table table-bordered table-sm">
+<tr><th>High-order function</th><td>A function that manipulate other function</td></tr>
+<tr><th>Call-back function</th><td>A function that is argument to another function</td></tr>
+<tr><th>Lexical context</th><td>The scope context for closures is bound and static</td></tr>
+<tr><th>Closures</th><td>Functions defined inside of another function</td></tr>
+<tr><th>Generators</th><td>Functions that yield new values for each call</td></tr>
+<tr><th>Recursive function</th><td>A function that call itself multiple times</td></tr>
+<tr><th>Tail optimization</th><td>A recursive function that can be optimized</td></tr>
+<tr><th>Lambda function</th><td>A pure function based on a single expression</td></tr>
+<tr><th>Stochastic function</th><td>A function that return random results</td></tr>
+<tr><th>Deterministic function</th><td>A function with the same result for the same input</td></tr>
+</table>
+
+<div class="alert alert-info">Following programming languages have made this paradigm famous: {Lisp, ML, OCaml, Haskell}. Functional programming is also used in multi-paradigm languages: {JavaScript, Python, Scala, Julia, Rust, Go, Kotlin, Swift, Dart ...}.</div>
+
+<hr>
+<p><b>Read next:</b>
+<a href="languages.html">Programming Languages</a></p>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-copyright text-center"></div>
+</footer>
+</div>
+</body>
+</html>

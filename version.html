@@ -1,0 +1,158 @@
+<html><head>
+  <meta charset="utf-8">
+  <meta name="description" content="Software Engineering.">
+  <meta name="author" content="Elucian Moise">
+  <meta name="keywords" content="software, engineering">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Website title -->
+  <title>SC Version Control</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <!-- Icon -->
+  <link rel="icon" type="image/png"  href="../images/favicon.ico">
+  <!-- Prism Highlighter -->
+  <link rel="stylesheet" href="../prism.css">
+  <script src="../prism.js"></script>
+  <!-- custom css -->
+  <link rel="stylesheet" href="../sage.css">
+  </head>
+<body>
+
+<div class="container">
+
+<!-- header -->
+<div class="row">
+    <div class="col">
+        <a href="https://sagecode.net"><img src="../images/sage-logo.svg" alt="Sage-Code Laboratory" height="80"/></a>
+    </div>
+    <div class="col  bottom-right">
+        <a href="../engineering.html">index</a>&lt;--
+    </div>
+</div><hr>
+
+<h1>Version Control Systems</h1>
+
+<div class="alert alert-secondary shadow-sm">Source code is difficult to make and subject to change. Sometimes your changes are not good and you have to revert changes and try something else. When you work in a team this becomes a significant problem. To track software changes professional developers are using a special software called <em>"Version Control System"</em> (VCS).</div>
+
+<h4>Bookmarks</h4>
+
+<ul>
+<li><a href="#cases">Use-Cases</a></li>
+<li><a href="#popular">Popular version VCS</a></li>
+<li><a href="#basic">Basic Concepts</a></li>
+<li><a href="#cloud">Cloud based SCM</a></li>
+<li><a href="#git">What is GIT?</a></li>
+</ul>
+
+<h2><a id="cases"/>Use-Cases</h2>
+
+<p>Using a version control system adds to complexity of process. What are some of the reason we need such a thing? If is more complicated why will anyone set-up an additional system? Here are some use-cases that explain it:</p>
+
+<ol>
+<li>Team collaboration</li>
+<li>Improved on-boarding</li>
+<li>Test automation</li>
+<li>Release automation</li>
+<li>Root cause analysis</li>
+</ol>
+
+<h2><a id="popular"/>Popular version VCS</h2>
+
+<p>In the past there ware many attempts to make better version control systems. The most desired features are: network efficiency, compression capability, storage efficiency and decentralization. Some are more potent than others:
+
+<ul>
+<li>SVN (Subversion) - Centralized but efficient </li>
+<li>Mercurial - Easy of use and semi-centralized</li>
+<li>GIT - Efficient and decentralized</li>
+</ul>
+
+<h2><a id="basic"/>Basic Concepts</h2>
+
+<p>A version control system has several concepts to learn before you can use them.</p>
+<ul>
+<li>Repository : is a central place where source code is stored</li>
+<li>Cloning : is a process of copy the repository to local computer</li>
+<li>Branching : is the process of working in a separated copy of software</li>
+<li>Synchronization : is the process of merging the code and getting updates</li>
+</ul>
+
+<h2><a id="cloud"/>Cloud based SCM</h2>
+
+<p>Normally a repository is local to a company and is stored on a server. Large teams and open source software can use cloud based repository. Lately there are several most popular organizations that enable creation of public and private repositories:</p>
+<ul>
+<li>GitHub</li>
+<li>BitBucket</li>
+<li>SourceForge</li>
+<li>GitLab</li>
+</ul>
+
+<p>These organizations have also provided tools to maintain project source code and work items. Now any developer can start a project very fast and can invite other developers to join and work together on open source projects.</p>
+<p>One of the most important aspect of software engineering is the ability to work in a team of developers. For this you need several skills that can be learn by practice.</p>
+
+<h2><a id="git"/>What is Git?</h2>
+
+<p>Git is a distributed version control system that is used for software development and other version control tasks. A version control software can store source code or text in a repository and track modifications in a multi user environment.</p>
+<p>Git was created by Linus Torvalds in 2005 for development of the Linux kernel.</p>
+
+<h3>Why Git is so popular?</h3>
+
+<p>Several features makes Git popular:</p>
+<ul>
+<li>speed;</li>
+<li>data integrity;</li>
+<li>distributed workflows;</li>
+</ul>
+<p>To develop a database you can work in a large team. For this you have to understand some terms and tools before you can collaborate with your team. Most of the companies are using GIT to control versions of software.</p>
+
+<h3>Main Terms</h3>
+
+<p>First, we need to introduce some Git-specific terms which may have different meanings in other version control systems such as Subversion or Mercurial.</p>
+<p>Git is a distributed version control system. It is used to store source code that is based on text files organized in folders and sub-folders. This structure is named Git&rsquo;s working tree. It is the directory where you can edit files and it is always part of a repository.</p>
+<p>Git can have local repositories that have a working tree and so-called bare repositories, used on servers as central repositories that don&rsquo;t have a working tree.</p>
+
+<h3>Git Software</h3>
+
+<p>To use Git you have to install Git software on your computer. This consist of Git client for your operating system and user interface tools to aid you visualizing the code.</p>
+<p>You can download Git for Mac, Windows, Linux or Solaris:</p>
+<p><a href="https://git-scm.com/downloads" rel="nofollow">https://git-scm.com/downloads</a></p>
+<p>Once you download the software read documentation:</p>
+<p><a href="https://git-scm.com/doc" rel="nofollow">https://git-scm.com/doc</a></p>
+
+<h3>Client</h3>
+
+<p>Git commands are complex and difficult to master. For improving productivity you can use a graphical user interface (GUI). This is a program that may aid in your quest:</p>
+<p>I have installed on my PC these two:</p>
+<ul>
+<li>Collab GitEye</li>
+<li>BitBucket SourceTree</li>
+</ul>
+<p>More tools:&nbsp;<a href="https://git-scm.com/download/gui/linux" rel="nofollow">https://git-scm.com/download/gui/linux</a></p>
+
+<h3>Server</h3>
+
+<p>On server you can have 2 options. One is to host on the cloud and second is to host on your own server. Git repository can be installed on Linux or Windows servers. When you install Git it has only basic capabilities. Most popular cloud services include a web user interface:</p>
+<ul>
+<li>GitHub</li>
+<li>BitBucket</li>
+<li>GitLab</li>
+</ul>
+
+<p>GitHub and BitBucket are SAS (Software as Service). Basic services are free, for open source projects. Private projects support limited number of users and you have to pay for more users. Some important features are not available for free.</p>
+
+<p>You can install only GitLab on your own server. This will allow creation of very large, distributed projects. It can support unlimited number of users in a private environment behind a firewall.</p>
+
+<!-- work in progress-->
+
+<hr>
+<p><b>Read next:</b>
+<a href="opensource.html">Open Source Projects</a></p>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-copyright text-center"></div>
+</footer>
+</div>
+</body>
+</html>
